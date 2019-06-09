@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>正则表达式测试工具</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<div style="width:100%;text-align:center;padding-bottom:10px">
+			<span>正则表达式</span>
+			<input style="width:60%" type="text" id="regExp"/>
+			<button id="generateShareUrl">分享</button>
+			<p id="shareUrl" style="display:none;"></p>
+		</div>
+		<div style="width:100%;">
+			<textarea style="width:49%;height:98%;float:left;" id="originText"
+				placeholder="请输入匹配原文">
+			</textarea>
+			<textarea 
+				style="width:49%;height:49%;float:right;background-color:#dddddd" 
+				placeholder="匹配结果"
+				id="matchText" readonly="readonly">
+			</textarea>
+			<textarea 
+				style="width:49%;height:49%;float:right;background-color:#eeeeee" 
+				placeholder="匹配分组结果"
+				id="matchGroupText" readonly="readonly">
+			</textarea>
+		</div>
+
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
